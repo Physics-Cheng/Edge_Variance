@@ -1,1 +1,12 @@
+Molecular Dynamics Simulations Data of M5
+DESCRIPTION OF THE DATA PACKAGE
+This dataset contains molecular dynamics simulations of M5. Each trajectory is simulated for 500 nanoseconds, resulting in 50,001 frames per simulation trajectory. The dataset includes data from three independent replicate simulations.
+The simulations were performed using the GROMACS (2021) simulation package and the charmm36-jul2021 force field. Each model folder contains 12 files:
+M5_solv_ions.gro (ASCII-encoded file): Initial conformation, including water and ions.
+M5_clean.pdb (ASCII-encoded file): Initial conformation of the protein.
+topol.top (ASCII-encoded file): A standalone topology file containing force field parameters.
+ions.mdp, minim.mdp, nvt.mdp, npt.mdp, and md.mdp (ASCII-encoded files): Molecular dynamics parameters used for production simulations.
+M51_100frames.pdb, M52_100frames.pdb, and M53_100frames.pdb (ASCII-encoded files): 100-frame samplings from the last 100 ns of the molecular dynamics trajectories, with the three replicate experiments indicated by the prefixes M51、M52、M53. Can be used for variance analysis.
+M5_statistics.csv: Statistical file of variance calculation results.
+The .itp files for the charmm36-jul2021 force field are provided in an additional folder named charmm36-jul2021.ff. Specifications for each file can be found at https://manual.gromacs.org/archive/5.0.4/online/.
 
